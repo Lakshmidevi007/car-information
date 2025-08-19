@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/loginpage.css"
+    <link rel="stylesheet" href="../css/loginpage.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginform">
-            <label for="username">Username</label>
-            <input type="text" id="username" required/><br><br>
-            <label for="password">Password</label>
-            <input type="password" id="password" required/><br><br>
-            <button type="submit">Login</button><br>
-            <p class="error" id="errormsg"></p>
-        </form>
-
-
+    <div class="container">
+    <form id="forms">
+    <h2>Login</h2>
+    <label>username:</label>
+    <input type="text" id="username" required><br><br>
+    <label>Password:</label>
+    <input type="password" id="password" required><br><br>
+    <label>confirm Password:</label>
+     <input type="password" id="confirmpassword" required><br><br>
+     <button type="button" onclick="validateForm()">Login</button>
+   
+    </form>
     </div>
-    <script src="../css/loginpage.js"></script>
+    <script src="../javascript/loginpage.js"></script>
 </body>
 </html>
