@@ -95,38 +95,66 @@ marquee{
 
 
 
-footer{
-    background-color: #111;
-     color: white;
-     padding: 20px 0;
-}
-.footer-container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-.footer-links  a{
-    color:#ff0000;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-.footer-links a:hover{
-    text-decoration: underline;
-}
-.copyright{
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-    color:#aaa;
-    width: 100%;
-}
+    footer {
+      background: #111;
+      color: #ddd;
+      padding: 30px 20px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-col h3 {
+      color:red;
+      margin-bottom: 15px;
+    }
+
+    .footer-col p, 
+    .footer-col a {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .footer-col a:hover {
+      color:red
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: red;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f39c12;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
 @media screen and (max-width: 600px){
     nav{
         width: 600px;
