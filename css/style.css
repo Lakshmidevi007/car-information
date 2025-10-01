@@ -34,7 +34,7 @@ nav{
     background-color: white;
     color:black;
     border: transparent;
-    border-radius: 20px;
+    border-radius: 22px;
     cursor: pointer;
     height: 30px;
     width: 60px;
@@ -76,8 +76,7 @@ nav{
 
 .Brands img{
     width: 80px;
-    height: 100px;
-
+    height: 130px;
     margin: 15px;
     transition: transform 0.3s ease;
 }
@@ -86,6 +85,13 @@ nav{
     transform: scale(1.2);
 }
 
+.Brands{
+    padding: 10px;
+}
+marquee{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.10);
+    
+}
 
 
 
