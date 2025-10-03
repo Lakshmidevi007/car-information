@@ -1,21 +1,18 @@
-function validateForm(){
-   var username=document.getElementById("username").value;
-    var password=document.getElementById("password").value;
+function login() {
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+      let message = document.getElementById("message");
 
+      let correctUser = "admin";
+      let correctPass = "12345";
 
- const items={}
- items.Name=username;
- items.Password=password;
-
- console.log(items)
- if(username===password){
-   alert("login successfully")
- }
-
- if(password===confirmPassword){
-    alert("login successfully")
- }
- else{
-    alert("password incorrect")
- }
-}
+      if (username === correctUser && password === correctPass) {
+        message.style.color = "green";
+        message.textContent = "Login Successful ";
+        alert(loginsuccessfull)
+      } else {
+        message.style.color = "red";
+        message.textContent = "Invalid Username or Password ";
+        alert(loginfailed)
+      }
+    }
